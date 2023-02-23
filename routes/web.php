@@ -28,3 +28,7 @@ Route::get('/about', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.index');
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'about'])->name('home.about');
+Route::get('/blog', [App\Http\Controllers\BlogController::class, 'blog'])->name('home.blog');
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contact'])->name('home.contact');
+Route::get('/product', [App\Http\Controllers\ProductController::class, 'product'])->name('home.product');
