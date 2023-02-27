@@ -39,7 +39,7 @@
             </button>
         </div>
     </div>
-    <!-- Carousel End -->
+    Carousel End
 
 
     <!-- Banner Start -->
