@@ -19,7 +19,7 @@ class ProductController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function product()
+    public function create()
     {
         //
         return view ('home.product');
