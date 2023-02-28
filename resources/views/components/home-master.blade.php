@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{asset('home-ui/img/favicon.ico')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -71,8 +71,8 @@
             <div class="navbar-nav mx-auto py-0">
                 <a href="" class="nav-item nav-link active">Home</a>
                 <a href="{{route('home.about')}}" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="product.html" class="nav-item nav-link">Product</a>
+                <a href="" class="nav-item nav-link">Service</a>
+                <a href="{{route('home.product')}}" class="nav-item nav-link">Product</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
@@ -88,22 +88,6 @@
         </div>
     </nav>
     <!-- Navbar End -->
-    
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 bg-hero mb-5">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-white mb-md-4">Contact Us</h1>
-                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
-                    <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Hero End -->
-
-
 
 @yield("content")
 
