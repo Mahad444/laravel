@@ -31,4 +31,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'about'])->name('home.about');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'blog'])->name('home.blog');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contact'])->name('home.contact');
-Route::get('/product', [App\Http\Controllers\ProductController::class, 'product'])->name('home.product');
+
+Route::get('/product', [App\Http\Controllers\ProductController::class, 'create'])->name('home.product');
+
+// ADMIN ROUTES
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'admin'])->name('admin.index'); 
+
